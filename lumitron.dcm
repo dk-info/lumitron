@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RR8
+D 8 resistors
+K R DEV
+$ENDCMP
+#
+$CMP SW_DIP_x8
+D DIP switch - 8x
+K DIP switch
+F http://www.ctscorp.com/components/Datasheets/206-208.pdf
+$ENDCMP
+#
+#End Doc Library
