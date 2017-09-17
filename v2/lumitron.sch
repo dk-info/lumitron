@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:RAF-cache
 LIBS:lumitron-cache
 EELAYER 25 0
 EELAYER END
@@ -293,4 +294,86 @@ Wire Notes Line
 	8800 5225 6475 5225
 Wire Notes Line
 	6475 5225 6475 4725
+$Comp
+L SPST-M S4
+U 1 1 59BE6274
+P 2825 2000
+F 0 "S4" H 2825 1900 50  0000 C CNB
+F 1 "POWER2" H 2825 1825 50  0000 C CNB
+F 2 "lumitron_pcb:sw_KS-01Q" H 2825 2000 60  0001 C CNN
+F 3 "" H 2825 2000 60  0000 C CNN
+	1    2825 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST-M S3
+U 1 1 59BE62D4
+P 2825 1550
+F 0 "S3" H 2825 1450 50  0000 C CNB
+F 1 "POWER3" H 2825 1375 50  0000 C CNB
+F 2 "lumitron_pcb:sw_KSA_Tactile_SPST" H 2825 1550 60  0001 C CNN
+F 3 "" H 2825 1550 60  0000 C CNN
+	1    2825 1550
+	1    0    0    -1  
+$EndComp
+Text Label 3350 2650 0    60   ~ 0
+RES
+Wire Wire Line
+	2675 2050 2625 2050
+Wire Wire Line
+	2625 2050 2625 2000
+Wire Wire Line
+	2475 2000 2675 2000
+Wire Wire Line
+	2975 2050 3025 2050
+Wire Wire Line
+	3025 2050 3025 2000
+Wire Wire Line
+	2975 2000 3175 2000
+Wire Wire Line
+	2675 1600 2625 1600
+Wire Wire Line
+	2625 1600 2625 1550
+Wire Wire Line
+	2475 1550 2675 1550
+Wire Wire Line
+	2975 1600 3025 1600
+Wire Wire Line
+	3025 1600 3025 1550
+Wire Wire Line
+	2975 1550 3175 1550
+Connection ~ 2625 1550
+Connection ~ 2625 2000
+Connection ~ 3025 1550
+Connection ~ 3025 2000
+Text Label 2475 2000 2    50   ~ 10
+[+]
+Text Label 2475 1550 2    50   ~ 10
+[+]
+Text Label 3175 2000 0    60   ~ 0
+RES
+Text Label 3175 1550 0    60   ~ 0
+RES
+Wire Notes Line
+	2150 1250 3525 1250
+Wire Notes Line
+	3525 1250 3525 2300
+Wire Notes Line
+	3525 2300 2150 2300
+Wire Notes Line
+	2150 2300 2150 1250
+Text Notes 2150 1225 0    60   ~ 0
+Alternate switch footprints
+$Comp
+L OSHW G1
+U 1 1 59BE6DD5
+P 10800 6975
+F 0 "G1" H 10800 6925 40  0001 C CNN
+F 1 "OSHW" H 10800 7075 40  0001 C CNN
+F 2 "lumitron_pcb:OSHW_6mm" H 10800 6975 60  0001 C CNN
+F 3 "" H 10800 6975 60  0000 C CNN
+F 4 "mfr_pn" H 10800 6975 60  0001 C CNN "manf#"
+	1    10800 6975
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
