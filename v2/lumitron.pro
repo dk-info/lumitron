@@ -1,4 +1,4 @@
-update=Tue Sep 19 00:01:26 2017
+update=Tue Sep 19 14:40:55 2017
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,6 +69,5 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=/home/samata/projects-git/RAF/kicad_v2.1/RAF-cache
 [general]
 version=1
