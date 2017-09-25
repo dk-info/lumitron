@@ -31,7 +31,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:RAF-cache
 LIBS:lumitron-cache
 EELAYER 25 0
 EELAYER END
@@ -355,14 +354,10 @@ RES
 Text Label 3175 1550 0    60   ~ 0
 RES
 Wire Notes Line
-	2150 1250 3525 1250
-Wire Notes Line
-	3525 1250 3525 2300
+	2150 850  3525 850 
 Wire Notes Line
 	3525 2300 2150 2300
-Wire Notes Line
-	2150 2300 2150 1250
-Text Notes 2150 1225 0    60   ~ 0
+Text Notes 2150 825  0    60   ~ 0
 Alternate switch footprints
 $Comp
 L OSHW G1
@@ -376,4 +371,65 @@ F 4 "mfr_pn" H 10800 6975 60  0001 C CNN "manf#"
 	1    10800 6975
 	1    0    0    -1  
 $EndComp
+$Comp
+L TEST_1P H5
+U 1 1 59C947AF
+P 3100 6450
+F 0 "H5" H 3100 6720 50  0000 C CNN
+F 1 "Hole" H 3100 6650 50  0000 C CNN
+F 2 "lumitron_pcb:MountingHole_3-7mm" H 3300 6450 50  0001 C CNN
+F 3 "" H 3300 6450 50  0000 C CNN
+	1    3100 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P H6
+U 1 1 59C947B5
+P 3400 6450
+F 0 "H6" H 3400 6720 50  0000 C CNN
+F 1 "Hole" H 3400 6650 50  0000 C CNN
+F 2 "lumitron_pcb:MountingHole_3-7mm" H 3600 6450 50  0001 C CNN
+F 3 "" H 3600 6450 50  0000 C CNN
+	1    3400 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P H7
+U 1 1 59C947BB
+P 3700 6450
+F 0 "H7" H 3700 6720 50  0000 C CNN
+F 1 "Hole" H 3700 6650 50  0000 C CNN
+F 2 "lumitron_pcb:MountingHole_3-7mm" H 3900 6450 50  0001 C CNN
+F 3 "" H 3900 6450 50  0000 C CNN
+	1    3700 6450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3100 6450
+NoConn ~ 3400 6450
+NoConn ~ 3700 6450
+$Comp
+L SPST-M S5
+U 1 1 59C94A2D
+P 2825 1125
+F 0 "S5" H 2825 1025 50  0000 C CNB
+F 1 "POWER" H 2825 950 50  0000 C CNB
+F 2 "lumitron_pcb:switch_MJTP1250" H 2825 1125 60  0001 C CNN
+F 3 "" H 2825 1125 60  0000 C CNN
+	1    2825 1125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2475 1125 2675 1125
+Wire Wire Line
+	2975 1125 3175 1125
+Text Label 2475 1125 2    50   ~ 10
+[+]
+Text Label 3175 1125 0    60   ~ 0
+RES
+NoConn ~ 2975 1175
+NoConn ~ 2675 1175
+Wire Notes Line
+	2150 2300 2150 850 
+Wire Notes Line
+	3525 850  3525 2300
 $EndSCHEMATC
